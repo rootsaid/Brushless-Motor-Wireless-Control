@@ -19,7 +19,7 @@ hc12.begin(9600);
 
 void loop()
 {
-  ele=map(analogRead(A0), 0, 1023, 0, 180);
+  thr=map(analogRead(A0), 0, 1023, 0, 180);
   hc12.print(thr);
   Serial.print(thr);
 delay(100);  
